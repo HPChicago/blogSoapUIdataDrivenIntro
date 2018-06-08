@@ -1,0 +1,1291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="5664c973-51d2-40f3-8115-c87ed93dcd15" created="2.2.0" activeEnvironment="Default environment" name="DataDrivenExcel" resourceRoot="" updated="2.2.0 2017-11-28T12:17:25Z" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings/>
+  <con:interface xsi:type="con:RestService" id="fb87cd96-3e0c-4267-b904-dbf91b46a2be" name="Swagger Petstore" type="rest_ex" wadlVersion="https://swagger.io/swagger2/specification" definitionUrl="C:\Users\hpovo\Documents\ReadyAPI-workspaces\Workspace_Training\DataDrivenExcelPetstore\swagger.json" basePath="/v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <con:description>This is a sample server Petstore server.  You can find out more about Swagger at [http://swagger.io](http://swagger.io) or on [irc.freenode.net, #swagger](http://swagger.io/irc/).  For this sample, you can use the api key `special-key` to test the authorization filters.</con:description>
+    <con:settings/>
+    <con:definitionCache/>
+    <con:endpoints>
+      <con:endpoint>http://petstore.swagger.io</con:endpoint>
+    </con:endpoints>
+    <con:resource name="/pet" path="/pet" id="ee282f7e-5700-4da6-8b5d-ad1d7508a4a6">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="addPet" id="c5e129c2-dd9b-428d-a9df-1dfa9dd7218f" method="POST">
+        <con:description>Add a new pet to the store</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+          <con:sampleContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:params/>
+          <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="3e9cb74f-0895-42a4-aecd-0c0cfa203f37" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request>{\r
+  "id" : 0,\r
+  "category" : {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  },\r
+  "name" : "doggie",\r
+  "photoUrls" : [ "string" ],\r
+  "tags" : [ {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  } ],\r
+  "status" : "available"\r
+}</con:request>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+        <con:request name="Request 2" id="efef49d9-0bc6-46fb-a2d5-92d5b9e0dae4" mediaType="application/xml">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request><![CDATA[<Pet>\r
+   <id>0</id>\r
+   <Category>\r
+      <id>0</id>\r
+      <name>string</name>\r
+   </Category>\r
+   <name>doggie</name>\r
+   <photoUrl>\r
+      <photoUrls>string</photoUrls>\r
+   </photoUrl>\r
+   <tag>\r
+      <Tag>\r
+         <id>0</id>\r
+         <name>string</name>\r
+      </Tag>\r
+   </tag>\r
+   <status>available</status>\r
+</Pet>]]></con:request>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="updatePet" id="4cace3b2-cc7d-4818-9dec-29be3e1da792" method="PUT">
+        <con:description>Update an existing pet</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+          <con:sampleContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:params/>
+          <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/json</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="ffc6f407-424b-468d-91d9-ca0636b68a6e" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request>{\r
+  "id" : 0,\r
+  "category" : {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  },\r
+  "name" : "doggie",\r
+  "photoUrls" : [ "string" ],\r
+  "tags" : [ {\r
+    "id" : 0,\r
+    "name" : "string"\r
+  } ],\r
+  "status" : "available"\r
+}</con:request>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+        <con:request name="Request 2" id="1958dd24-bd69-4b93-83f2-89deefad4fc7" mediaType="application/xml">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request><![CDATA[<Pet>\r
+   <id>0</id>\r
+   <Category>\r
+      <id>0</id>\r
+      <name>string</name>\r
+   </Category>\r
+   <name>doggie</name>\r
+   <photoUrl>\r
+      <photoUrls>string</photoUrls>\r
+   </photoUrl>\r
+   <tag>\r
+      <Tag>\r
+         <id>0</id>\r
+         <name>string</name>\r
+      </Tag>\r
+   </tag>\r
+   <status>available</status>\r
+</Pet>]]></con:request>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/pet/findByStatus" path="/pet/findByStatus" id="fa6b5c4d-2d24-4ab1-8eb8-d576774bd7ca">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="findPetsByStatus" id="967b31f0-ea51-4994-97cf-4b73e57da1cc" method="GET">
+        <con:description>Multiple status values can be provided with comma separated strings
+Finds Pets by status</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>status</con:name>
+            <con:style>QUERY</con:style>
+            <con:dataType>array</con:dataType>
+            <con:description>Status values that need to be considered for filter</con:description>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>[ {
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+} ]</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="a8153b0d-1c2e-41b3-a458-d2fc146598f8" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/pet/findByTags" path="/pet/findByTags" id="217e6c42-a56a-49db-9ce3-1877910f2ac0">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="findPetsByTags" id="422affb9-8879-4e53-8f16-ec9c6c6fec24" method="GET">
+        <con:description>Muliple tags can be provided with comma separated strings. Use tag1, tag2, tag3 for testing.
+Finds Pets by tags</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>tags</con:name>
+            <con:style>QUERY</con:style>
+            <con:dataType>array</con:dataType>
+            <con:description>Tags to filter by</con:description>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>[ {
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+} ]</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="3fff246f-c3b1-4c83-87aa-02c346705e7d" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/pet/{petId}" path="/pet/{petId}" id="209a984d-5100-45e4-bf84-ab6cea216d7b">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>petId</con:name>
+          <con:style>TEMPLATE</con:style>
+          <con:dataType>integer</con:dataType>
+          <con:description>Pet id to delete</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="getPetById" id="9acae762-6d30-41d7-8b83-3c729405284d" method="GET">
+        <con:description>Returns a single pet
+Find pet by ID</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent><![CDATA[<Pet>
+   <id>0</id>
+   <Category>
+      <id>0</id>
+      <name>string</name>
+   </Category>
+   <name>doggie</name>
+   <photoUrl>
+      <photoUrls>string</photoUrls>
+   </photoUrl>
+   <tag>
+      <Tag>
+         <id>0</id>
+         <name>string</name>
+      </Tag>
+   </tag>
+   <status>available</status>
+</Pet>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>{
+  "id" : 0,
+  "category" : {
+    "id" : 0,
+    "name" : "string"
+  },
+  "name" : "doggie",
+  "photoUrls" : [ "string" ],
+  "tags" : [ {
+    "id" : 0,
+    "name" : "string"
+  } ],
+  "status" : "available"
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="07d36246-a3d7-4740-9f0d-ff050f62afb2" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials>
+            <con:authType>No Authorization</con:authType>
+          </con:credentials>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="updatePetWithForm" id="f3f9aabd-6aa8-4099-b567-2dee711873f5" method="POST">
+        <con:description>Updates a pet in the store with form data</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>name</con:name>
+            <con:style>QUERY</con:style>
+            <con:description>Updated name of the pet</con:description>
+          </con:parameter>
+          <con:parameter>
+            <con:name>status</con:name>
+            <con:style>QUERY</con:style>
+            <con:description>Updated status of the pet</con:description>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>405</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>application/x-www-form-urlencoded</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="4056ec5b-95d2-4741-9323-52bfc52ec942" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="deletePet" id="cd757ee0-a312-437a-8dc4-b91ada725872" method="DELETE">
+        <con:description>Deletes a pet</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>api_key</con:name>
+            <con:style>HEADER</con:style>
+            <con:description xsi:nil="true"/>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="5bc2c1fd-2a91-4b0b-9d4d-e1f24c747249" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/pet/{petId}/uploadImage" path="/pet/{petId}/uploadImage" id="f827c13b-34d6-4914-b780-e530045831ef">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>petId</con:name>
+          <con:style>TEMPLATE</con:style>
+          <con:dataType>integer</con:dataType>
+          <con:description>ID of pet to update</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="uploadFile" id="2014b1f5-349a-401c-9bb1-4381c6e85ba8" method="POST">
+        <con:description>uploads an image</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter>
+            <con:name>additionalMetadata</con:name>
+            <con:style>QUERY</con:style>
+            <con:description>Additional data to pass to server</con:description>
+          </con:parameter>
+          <con:parameter>
+            <con:name>file</con:name>
+            <con:style>QUERY</con:style>
+            <con:description>file to upload</con:description>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>{
+  "code" : 0,
+  "type" : "string",
+  "message" : "string"
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="REQUEST">
+          <con:mediaType>multipart/form-data</con:mediaType>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="67851eb7-2357-4145-b1cd-beecc6cd84be" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/store/inventory" path="/store/inventory" id="b9e2c23b-2e69-42d5-87a0-1caedb6abfe9">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="getInventory" id="81c3ae6a-2d60-483c-b50c-a6b0f6b1ae62" method="GET">
+        <con:description>Returns a map of status codes to quantities
+Returns pet inventories by status</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>{
+  "key" : "key",
+  "value" : 0
+}</con:sampleContent>
+        </con:representation>
+        <con:request name="Request 1" id="096bd608-910d-4c11-96d0-dc753c32e72c" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/store/order" path="/store/order" id="4f0df4cf-7e69-4ef7-87ac-718d6f89fc1e">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="placeOrder" id="de9c26b7-8f70-472f-a959-e0a2f84e58e2" method="POST">
+        <con:description>Place an order for a pet</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>false</complete>
+</Order>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="8bdc6ee1-62f4-41af-a145-1b3ebbe774d7" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/store/order/{orderId}" path="/store/order/{orderId}" id="21c66493-c15d-479d-abec-0241b4212e7d">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>orderId</con:name>
+          <con:style>TEMPLATE</con:style>
+          <con:dataType>integer</con:dataType>
+          <con:description>ID of the order that needs to be deleted</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="getOrderById" id="9076cc4f-3147-4c41-bf15-c0b64a28d6f2" method="GET">
+        <con:description>For valid response try integer IDs with value >= 1 and &lt;= 10. Other values will generated exceptions
+Find purchase order by ID</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent><![CDATA[<Order>
+   <id>0</id>
+   <petId>0</petId>
+   <quantity>0</quantity>
+   <shipDate>2015-07-20T15:49:04-07:00</shipDate>
+   <status>placed</status>
+   <complete>false</complete>
+</Order>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>{
+  "id" : 0,
+  "petId" : 0,
+  "quantity" : 0,
+  "shipDate" : "2015-07-20T15:49:04-07:00",
+  "status" : "placed",
+  "complete" : false
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="35a91d89-9302-4bc1-8053-1852c4d1fa39" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="deleteOrder" id="4f10bec0-9584-4366-a23a-7fedc3c26758" method="DELETE">
+        <con:description>For valid response try integer IDs with positive integer value. Negative or non-integer values will generate API errors
+Delete purchase order by ID</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="4e3c9897-aa22-4d15-990b-3a84449434c3" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/user" path="/user" id="617b77f6-800c-4b15-9844-7a28a7a3247f">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="createUser" id="73572b31-9304-434d-a28b-fb1990685396" method="POST">
+        <con:description>This can only be done by the logged in user.
+Create user</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="dcc0e862-bc4a-437f-8ccc-fb6fa8f28037" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/user/createWithArray" path="/user/createWithArray" id="6b9d043f-3844-4340-974e-eaaee99d19c3">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="createUsersWithArrayInput" id="f2a7dbe7-d845-43f9-a424-bea01a1cd78a" method="POST">
+        <con:description>Creates list of users with given input array</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="083c5eaf-53de-4f29-8621-1e79115421af" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/user/createWithList" path="/user/createWithList" id="131a1208-9c48-4097-b6e7-e4c564771f6e">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="createUsersWithListInput" id="6250f034-ff3e-4517-8765-b031a1f4c442" method="POST">
+        <con:description>Creates list of users with given input array</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="948b178f-a180-4122-9ee9-5be8e136e5df" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/user/login" path="/user/login" id="f7f73f55-69d7-4f47-a4b6-a7e0685f73de">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="loginUser" id="398cd126-740d-4fde-a603-28e8d74d5b91" method="GET">
+        <con:description>Logs user into the system</con:description>
+        <con:settings/>
+        <con:parameters>
+          <con:parameter required="true">
+            <con:name>username</con:name>
+            <con:style>QUERY</con:style>
+            <con:description>The user name for login</con:description>
+          </con:parameter>
+          <con:parameter required="true">
+            <con:name>password</con:name>
+            <con:style>QUERY</con:style>
+            <con:description>The password for login in clear text</con:description>
+          </con:parameter>
+        </con:parameters>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>&lt;string>string&lt;/string></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>"string"</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="c5591b1d-340d-4b3b-a4e2-f7ba7dc4aa70" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/user/logout" path="/user/logout" id="4128cb39-72b9-4423-8099-3074691c524a">
+      <con:settings/>
+      <con:parameters/>
+      <con:method name="logoutUser" id="e0140e53-97c1-489d-84fb-ef08741d6e38" method="GET">
+        <con:description>Logs out current logged in user session</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status/>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="eff22718-65af-4a77-91f1-82e691d65c9b" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+    <con:resource name="/user/{username}" path="/user/{username}" id="38f1e61f-df95-4398-bd56-31c7c09a4820">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter required="true">
+          <con:name>username</con:name>
+          <con:style>TEMPLATE</con:style>
+          <con:description>The name that needs to be deleted</con:description>
+        </con:parameter>
+      </con:parameters>
+      <con:method name="getUserByName" id="a77d2981-bd67-4a48-998d-95397ba10023" method="GET">
+        <con:description>Get user by user name</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent><![CDATA[<User>
+   <id>0</id>
+   <username>string</username>
+   <firstName>string</firstName>
+   <lastName>string</lastName>
+   <email>string</email>
+   <password>string</password>
+   <phone>string</phone>
+   <userStatus>0</userStatus>
+</User>]]></con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>200</con:status>
+          <con:params/>
+          <con:sampleContent>{
+  "id" : 0,
+  "username" : "string",
+  "firstName" : "string",
+  "lastName" : "string",
+  "email" : "string",
+  "password" : "string",
+  "phone" : "string",
+  "userStatus" : 0
+}</con:sampleContent>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="48a1e7d2-8f16-4660-9b0e-64537ebe0fb2" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="updateUser" id="5f52a0e7-9be9-4e24-965c-83f466364513" method="PUT">
+        <con:description>This can only be done by the logged in user.
+Updated user</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="3c84618b-6ebf-4df2-9628-c4f66ce78707" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+      <con:method name="deleteUser" id="cca0f5ba-df0a-4c41-9e3d-2931adf783b1" method="DELETE">
+        <con:description>This can only be done by the logged in user.
+Delete user</con:description>
+        <con:settings/>
+        <con:parameters/>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>400</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/xml</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:representation type="RESPONSE">
+          <con:mediaType>application/json</con:mediaType>
+          <con:status>404</con:status>
+          <con:params/>
+        </con:representation>
+        <con:request name="Request 1" id="7394fd60-a100-4646-9777-05c3288fc064" mediaType="application/json">
+          <con:settings/>
+          <con:endpoint>http://petstore.swagger.io</con:endpoint>
+          <con:request/>
+          <con:credentials/>
+          <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+          <con:parameters/>
+        </con:request>
+      </con:method>
+    </con:resource>
+  </con:interface>
+  <con:testSuite id="6564384e-a34b-4b08-98c4-1af4e3d67b9e" name="DataDrivenPetstore">
+    <con:settings/>
+    <con:savedRecentRuns>1</con:savedRecentRuns>
+    <con:runType>SEQUENTIAL</con:runType>
+    <con:testCase id="0aaa4c2b-4ace-4564-8373-9852c7f92f23" discardOkResults="true" failOnError="false" failTestCaseOnErrors="true" keepSession="false" name="RetrievePets" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="">
+      <con:settings/>
+      <con:savedRecentRuns>1</con:savedRecentRuns>
+      <con:testStep type="groovy" name="createFolder" id="f82573f7-6e1c-41cf-b207-61fe34070f56">
+        <con:settings/>
+        <con:config>
+          <script>def date = new Date() 
+def dtTimeStamp = date.format("yyyy-MM-dd-HH-mm-ss") 
+def dt = date.format("yyyy-MM-dd") 
+def projectFolder = context.expand( '${#Project#projectFolder}' )
+log.info(projectFolder)
+resultFolder = projectFolder + "\\results\\execution\\" + dt
+def resultDir= new File(resultFolder)
+if(!resultDir.exists()){
+resultDir.mkdirs()
+log.info "Folder is created"
+}
+else{
+	log.info "Folder already exists"
+}
+context.testCase.setPropertyValue("tsMin", date.format("HH-mm-ss"))
+context.testCase.setPropertyValue("tsDay", date.format("yyyy-MM-dd"))
+return resultFolder</script>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasource" name="Ds_InputIds" id="8ac78dd8-824a-428f-a214-ae3e57bfb398">
+        <con:settings/>
+        <con:config xsi:type="con:DataSourceStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSource type="Directory">
+            <con:configuration>
+              <file>${projectDir}/requests/requestPetIds.xlsx</file>
+              <worksheet>Sheet1</worksheet>
+              <cell>A2</cell>
+              <ignoreEmpty>true</ignoreEmpty>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSource>
+          <con:shared>true</con:shared>
+          <con:restartShared>true</con:restartShared>
+          <con:property>testCaseNumber</con:property>
+          <con:property>petId</con:property>
+          <con:completeLastOperation>true</con:completeLastOperation>
+          <con:restartOnRun>true</con:restartOnRun>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="restrequest" name="getPetById_GET" id="9ee9b6c4-c32b-483b-add0-d940a150ae83">
+        <con:settings/>
+        <con:config service="Swagger Petstore" resourcePath="/v2/pet/{petId}" methodName="getPetById" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:restRequest name="getPetById_GET" id="07d36246-a3d7-4740-9f0d-ff050f62afb2" mediaType="application/json">
+            <con:settings>
+              <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+            </con:settings>
+            <con:endpoint>http://petstore.swagger.io</con:endpoint>
+            <con:request/>
+            <con:originalUri>http://petstore.swagger.io/v2/pet/100</con:originalUri>
+            <con:assertion type="GroovyScriptAssertion" id="bdd32f76-ae09-434d-8c22-feb050f578b8" name="Script Assertion">
+              <con:configuration>
+                <scriptText>def code = context.expand( '${getPetById_GET#HarResponse#$[\'status\']}' )
+if(Integer.valueOf(code) == 200){
+	messageExchange.modelItem.testStep.testCase.setPropertyValue( "currentHttpCode", code )
+	assert true
+}
+else{
+	messageExchange.modelItem.testStep.testCase.setPropertyValue( "currentHttpCode", code )
+	assert false
+}</scriptText>
+              </con:configuration>
+            </con:assertion>
+            <con:credentials>
+              <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+              <con:authType>No Authorization</con:authType>
+            </con:credentials>
+            <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+            <con:parameters>
+              <entry key="petId" value="${Ds_InputIds#petId}" xmlns="http://eviware.com/soapui/config"/>
+            </con:parameters>
+          </con:restRequest>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasink" name="Dsink_Output" id="e421e17d-b279-4c72-b251-9f6ce0835ee3">
+        <con:settings/>
+        <con:config xsi:type="con:DataSinkStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+          <con:dataSink type="Excel">
+            <con:configuration>
+              <file>${projectDir}/results/templates/templateGetPetsById.xlsx</file>
+              <outfile>${projectDir}/results/execution/${#TestCase#tsDay}/getPetsById ${#TestCase#tsMin}.xlsx</outfile>
+              <worksheet>Sheet1</worksheet>
+              <cell>A2</cell>
+              <evaluateFormulas>false</evaluateFormulas>
+            </con:configuration>
+          </con:dataSink>
+          <con:properties>
+            <con:property>
+              <con:name>testCaseNumber</con:name>
+              <con:value>${Ds_InputIds#testCaseNumber}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>petId</con:name>
+              <con:value>${Ds_InputIds#petId}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>timeStamp</con:name>
+              <con:value>${getPetById_GET#HarResponse#$['headers'][6]['value']}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>currentHttpCode</con:name>
+              <con:value>${#TestCase#currentHttpCode}</con:value>
+            </con:property>
+            <con:property>
+              <con:name>currentResponse</con:name>
+              <con:value>${getPetById_GET#Response}</con:value>
+            </con:property>
+          </con:properties>
+        </con:config>
+      </con:testStep>
+      <con:testStep type="datasourceloop" name="DataSource Loop" id="0defef44-041e-4721-95c4-3f52d478915e">
+        <con:settings/>
+        <con:config>
+          <dataSourceStep>Ds_InputIds</dataSourceStep>
+          <targetStep>getPetById_GET</targetStep>
+        </con:config>
+      </con:testStep>
+      <con:properties>
+        <con:property>
+          <con:name>currentHttpCode</con:name>
+          <con:value>200</con:value>
+        </con:property>
+        <con:property>
+          <con:name>tsMin</con:name>
+          <con:value>20-18-06</con:value>
+        </con:property>
+        <con:property>
+          <con:name>tsDay</con:name>
+          <con:value>2018-06-04</con:value>
+        </con:property>
+      </con:properties>
+      <con:reportParameters/>
+      <con:breakPoints>
+        <con:testStepId>8ac78dd8-824a-428f-a214-ae3e57bfb398</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>e421e17d-b279-4c72-b251-9f6ce0835ee3</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+      <con:breakPoints>
+        <con:testStepId>f82573f7-6e1c-41cf-b207-61fe34070f56</con:testStepId>
+        <con:status>NONE</con:status>
+        <con:properties/>
+      </con:breakPoints>
+    </con:testCase>
+    <con:properties/>
+    <con:reportParameters/>
+  </con:testSuite>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
+  <con:requirements/>
+  <con:properties>
+    <con:property>
+      <con:name>projectFolder</con:name>
+      <con:value>${projectDir}</con:value>
+    </con:property>
+  </con:properties>
+  <con:wssContainer/>
+  <con:databaseConnectionContainer/>
+  <con:jmsConnectionContainer/>
+  <con:oAuth2ProfileContainer/>
+  <con:oAuth1ProfileContainer/>
+  <con:reporting>
+    <con:reportTemplates/>
+    <con:xmlTemplates/>
+    <con:xmlTemplates/>
+    <con:parameters/>
+    <con:parameters/>
+  </con:reporting>
+  <con:reporting/>
+  <con:authRepository/>
+  <con:tags/>
+</con:soapui-project>
